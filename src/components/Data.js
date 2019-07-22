@@ -1,4 +1,4 @@
-const SHOP_DATA = [
+const BOOKS_DATA = [
   {
     id: 1,
     title: 'Fulton County Library',

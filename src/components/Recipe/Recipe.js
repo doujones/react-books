@@ -1,16 +1,27 @@
 import React from 'react'
 import "./Recipe.scss"
+import { withRouter } from "react-router-dom"
 
-export default function recipe({title, imageUrl, size}) {
-  return (
-    <div className={`${size} recipe`} >
+
+const Recipe = ({ name, imageUrl, size, history, linkUrl, match}) => (
+  
+    <div 
+    className={`${size} recipe`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
       <div className='background-image' style={{backgroundImage: `url(${imageUrl})`
-    }}>
-    </div>
+    }}
+    />
+     
       <div className="content">
-      <h1 className="title">{title.toUpperCase()}</h1>
+      <h1 className='title'>{name.toUpperCase()}</h1>
       <span className="subtitle">Purchase</span>
       </div>
       </div>
-  )
-}
+  );
+
+  
+
+  
+
+
+
+export default withRouter(Recipe);

@@ -99,3 +99,5 @@ const BOOKS_DATA = [
     ]
   }
 ]
+
+export default BOOKS_DATA;

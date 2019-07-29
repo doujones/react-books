@@ -1,6 +1,9 @@
 .lastname{
   text-transform: uppercase;
   font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+  width: 80%;
 }
 
 .lastname-container{
@@ -9,13 +12,7 @@
   padding: 25px;
 }
 
-.header{
-  height: 71px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-}
+
 
 .options{
   width: 50%;
@@ -26,5 +23,11 @@
 
   .option{
     padding: 10px 15px;
+    cursor: pointer;
   }
 }
+
+
+  
+
+
